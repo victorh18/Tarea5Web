@@ -1,0 +1,97 @@
+<html lang="es">
+<head>
+	<title>Registro</title>
+				<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="code.js"></script>
+</head>
+<body onload="cargarDatos();">
+	<div class="col col-sm-2">
+		<table>
+		<!--Fila de cedula-->
+		<tr>
+			<td>Cédula</td>
+			<td>
+				<input id='txtCedula'>
+			</td>
+
+		</tr>
+
+		<!--Fila de nombre-->
+		<tr>
+			<td>Nombre</td>
+			<td>
+				<input id='txtNombre'>
+			</td>
+
+		</tr>
+
+		<!--Fila de apellido-->
+		<tr>
+			<td>Apellido</td>
+			<td>
+				<input id='txtApellido'>
+			</td>
+
+		</tr>
+
+		<!--Fila de telefono-->
+		<tr>
+			<td>Telefono</td>
+			<td>
+				<input id='txtTelefono'>
+			</td>
+
+		</tr>
+
+		<tr>
+			<td align='center'>
+				<button id="btnGuardar" onclick='getPersona();'>Guardar</button>
+			</dt>
+
+			<td align='center'>
+				<button onclick='mostrarPersonas()'>Mostrar</button>
+			</dt>
+		</tr>
+
+
+	</table>
+	</div>
+
+	<div class="col col-sm-8 col-sm-offset-1">
+		<video id="video" width="320" height="200" autoplay></video>
+		<button id="snap">Snap Photo</button>
+		<canvas id="canvas" width="320" height="200" style="border:1px solid #000000;"></canvas>
+		
+
+	</div>
+
+	<div class="col col-sm-12">
+		<table class='table'>
+		    <thead>
+		        <td>Cedula</td>
+		        <td>Nombre</td>
+		        <td>Apellido</td>
+		        <td>Telefono</td>
+		        <td>Foto</td>
+		        <td>Acciones</td>
+
+
+		      </thead>
+		      
+		      <tbody id="tbDatos" class="table">
+		      
+		      </tbody>
+		</table>
+
+	</div>
+
+
+</body>
+</html>
